@@ -1,0 +1,14 @@
+.details{
+    margin: 2rem;
+}
+
+.details .employee_data{
+    text-align: left;
+}
+
+.details a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid;
+    padding: .5rem;
+}

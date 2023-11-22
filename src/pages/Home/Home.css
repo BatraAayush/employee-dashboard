@@ -1,0 +1,24 @@
+.home .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.home .employee-card{
+    width: 15rem;
+    height: 10rem;
+    border: 1px solid lightgray;
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+.home input{
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.home a{
+    color: black;
+    text-decoration: none;
+}
