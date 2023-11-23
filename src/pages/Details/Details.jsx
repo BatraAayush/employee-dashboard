@@ -18,7 +18,7 @@ function Details() {
   };
   return (
     <div className="details">
-      <Link to={"/"}>Back to Home</Link>
+      <button><Link to={"/"}>Back to Home</Link></button>
       <h1>Employee Details</h1>
       <div className="employee_data">
         <p>
@@ -31,7 +31,7 @@ function Details() {
           <strong>Age:</strong> {employee.employee_age}
         </p>
         <p>
-          <strong>Salary:</strong> {employee.employee_salary}
+          <strong>Salary:</strong> Rs. {employee.employee_salary}
         </p>
         <button>Edit</button>{" "}
         <button onClick={() => deleteHandler(employee.id)}>Delete</button>

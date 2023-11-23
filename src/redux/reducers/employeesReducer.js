@@ -1,5 +1,6 @@
 import {
   DELETE_EMPLOYEE,
+  DELETE_SELECTED_ID_EMPLOYEES,
   SET_DATA,
   SET_EMPLOYEES_ERROR,
   SET_EMPLOYEES_LOADING,
@@ -26,6 +27,10 @@ export const employeesReducers = (state = initialState, action) => {
       const updatedEmployees = state.employees.filter(
         ({ id }) => Number(id) !== Number(action.payload)
       );
+      return { ...state, employees: updatedEmployees };
+    }
+    case DELETE_SELECTED_ID_EMPLOYEES: {
+      const updatedEmployees = state.employees.filter(({id}) => !action.payload.includes(id));
       return {...state, employees: updatedEmployees}
     }
     default:
