@@ -5,5 +5,12 @@ So we need a dashboard where we can see the “Employee” data and can have the
 
 ## Link
 
-In the project directory, you can run:
+Employees Dashboard [Live Link](https://employees-dashboard-ab.netlify.app/)
+
+## Features
+1. Dashboard that will show employees data
+2. Employee Details page on clicking card
+3. Delete Employee's data on Delete button click
+4. Delete multiple employees using checkbox
+5. Search bar to search with ID
 
